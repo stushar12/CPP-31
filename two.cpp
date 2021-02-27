@@ -44,8 +44,9 @@ void KMPSearch(string pat, string txt)
             i++; 
         } 
 
-        if (j == M) { 
-            cout<<"Found pattern at index "<< i - j<<"\n"; 
+        if (j == M) 
+        { 
+            cout<<"Found pattern from index "<< i - j<<" to "<<i-1<<"\n"; 
             j = lps[j - 1]; 
         } 
   
